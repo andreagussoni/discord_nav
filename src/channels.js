@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const Channels = () => {
   return (
     <div className="ml-16 w-80 flex flex-col h-screen shadow-lg bg-two dark:bg-eight">
@@ -22,6 +24,10 @@ const ChannelBox = () => {
       </h5>
     </div>
   );
+};
+
+const Dropdown = ({ header, selections }) => {
+  const [expanded, setExpanded] = useState(true);
 };
 
 export default Channels;
